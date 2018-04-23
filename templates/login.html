@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+      <div>
+
+        <h1>Login</h1>
+
+        <form action="/login" method="post">
+            <table>
+              <tr>
+                <td><input name="username" type="text" value="{{ username }}" placeholder="Username"></td>
+                <td><span class="error">{{ username_error }}</span></td>
+              </tr>
+              <tr>
+                <td><input name="password" type="password" placeholder="Password"></td>
+                <td><span class="error">{{ password_error }}</span></td>
+              </tr>
+            </table>
+            <input id="submit_button" type="submit" value="Login">
+        </form>
+
+        <p class="signup-text">Don't have an account? <a href="/signup">Sign Up</a></p>
+
+      </div>
+{% endblock %}

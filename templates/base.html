@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>{{title}}</title>
+    <style>
+        .error{
+            color : red;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <h1 class="title" align="center"><a href="/">Blogz</a></h1>
+        <a href="/blog" class="left spacing">View All Posts</a>
+        <a href="/newpost">New Post</a>
+        <a href="/logout" class="right">Logout</a>
+        <a href="/login" class="right spacing"></i> Login</a>
+        <a href="/signup" class="right spacing"></i> Signup </a>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+
+</html>
